@@ -1,10 +1,16 @@
 version: '2.0'
 services:
   word-dump-service:
-    image: sywa/word-dump-service:latest
+    image: scrabbleyourword/word-dump-service:latest
     ports:
-    - 9000:8080
+      - 9000:8080
   word-processing-service:
-    image: sywa/word-processing-service:latest
+    image: scrabbleyourword/word-processing-service:latest
     ports:
-    - 9001:8080
+      - 9001:8080
+  rabbit:
+    image: rabbitmq
+  rabbit-manager:
+    image: rabbitmq:3-management
+    ports:
+      - 9002:15672
