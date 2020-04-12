@@ -1,10 +1,10 @@
 version: '2.0'
 services:
   word-dump-service:
-    image: sywa/word-dump-service:latest
+    image: scrabbleyourword/word-dump-service:latest
     ports:
     - 9000:8080
   word-processing-service:
-    image: sywa/word-processing-service:latest
+    image: scrabbleyourword/word-processing-service:latest
     ports:
     - 9001:8080
